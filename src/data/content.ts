@@ -662,3 +662,367 @@ export function buildPackageWhatsAppLink(packageName: string, rate: number, area
   msg += `\n\nPlease let me know the process to begin the architectural & engineering design.`;
   return buildWhatsAppLink(msg);
 }
+
+export interface ConstructionPackageItem {
+  id: string;
+  name: string;
+  rate: number;
+  unit: string;
+  badge?: string;
+  isPopular?: boolean;
+  tagline: string;
+  highlights: string[];
+}
+
+export const CONSTRUCTION_PACKAGES: ConstructionPackageItem[] = [
+  {
+    id: 'silver-construction',
+    name: 'Silver',
+    rate: 1800,
+    unit: '₹1,800/ sq.ft',
+    tagline: 'Standard Quality Turnkey Construction',
+    highlights: [
+      'Kamdhenu / SAIL certified TMT Steel',
+      'Ultratech Cement & M20 RCC Mix',
+      'Iron Main Door upto ₹30,000',
+      'Varmora / Kajaria Flooring upto ₹60/sqft',
+      'Free 2D Floor Plan & 3D Elevation',
+    ],
+  },
+  {
+    id: 'gold-construction',
+    name: 'Gold',
+    rate: 2000,
+    unit: '₹2,000/ sq.ft',
+    badge: 'Most Popular',
+    isPopular: true,
+    tagline: 'Premium Turnkey Construction',
+    highlights: [
+      'Jindal / JSW certified TMT Steel',
+      'ACC / Ultratech Cement & M20 RCC Mix',
+      'Stainless Steel Main Door upto ₹40,000',
+      'UPVC Windows & Window Grills included',
+      'SS 304 Grade Staircase Railing',
+      'Kajaria / Johnson Flooring upto ₹80/sqft',
+    ],
+  },
+  {
+    id: 'platinum-construction',
+    name: 'Platinum',
+    rate: 2300,
+    unit: '₹2,300/ sq.ft',
+    badge: 'Luxury Finish',
+    tagline: 'Luxury Turnkey Construction',
+    highlights: [
+      'TATA Tiscon / Jindal premium TMT Steel',
+      'ACC / Ultratech / Concreto Cement',
+      'Teak Wood / Stainless Steel Door upto ₹50,000',
+      'Royale Luxury Emulsion & Apex Ultima',
+      'SS 304 Grade Railing with Glass',
+      'Kajaria / Johnson / Somany Flooring upto ₹100/sqft',
+    ],
+  },
+];
+
+export interface ConstructionSpecSection {
+  category: string;
+  subtext?: string;
+  features: {
+    name: string;
+    silver: string;
+    gold: string;
+    platinum: string;
+  }[];
+}
+
+export const CONSTRUCTION_SPEC_SECTIONS: ConstructionSpecSection[] = [
+  {
+    category: 'Design & Planning',
+    features: [
+      {
+        name: 'Design & Consultation',
+        silver: 'Free',
+        gold: 'Free',
+        platinum: 'Free',
+      },
+      {
+        name: 'Drawings',
+        silver: '2D Floor Plan & 3D Elevation',
+        gold: '2D Floor Plan & 3D Elevation',
+        platinum: '2D Floor Plan & 3D Elevation',
+      },
+      {
+        name: 'Structural Design',
+        silver: 'Included (Engineered)',
+        gold: 'Included (Engineered)',
+        platinum: 'Included (Engineered)',
+      },
+    ],
+  },
+  {
+    category: 'Structure',
+    features: [
+      {
+        name: 'Steel',
+        silver: 'Kamdhenu / Sail',
+        gold: 'Jindal / JSW',
+        platinum: 'TATA Tiscon / Jindal',
+      },
+      {
+        name: 'Cement',
+        silver: 'Ultratech',
+        gold: 'ACC / Ultratech',
+        platinum: 'ACC / Ultratech / Concreto',
+      },
+      {
+        name: '20mm Aggregate',
+        silver: 'Gaya / Koderma',
+        gold: 'Gaya / Koderma',
+        platinum: 'Gaya / Koderma',
+      },
+      {
+        name: 'Bricks',
+        silver: 'A1 Quality',
+        gold: 'A1 Quality',
+        platinum: 'A1 Quality',
+      },
+      {
+        name: 'RCC Mix',
+        silver: 'M20 Grade',
+        gold: 'M20 Grade',
+        platinum: 'M20 Grade',
+      },
+      {
+        name: 'Ceiling Height',
+        silver: 'Standard 10 Feet',
+        gold: 'Standard 10.5 Feet',
+        platinum: 'Standard 11 Feet',
+      },
+    ],
+  },
+  {
+    category: 'Kitchen (All fittings can be customised at cost)',
+    features: [
+      {
+        name: 'Ceramic Wall Dado',
+        silver: 'Upto ₹40 per sqft',
+        gold: 'Upto ₹60 per sqft',
+        platinum: 'Upto ₹80 per sqft',
+      },
+      {
+        name: 'Sink',
+        silver: 'Upto ₹3,000 (Futura, Carysil)',
+        gold: 'Upto ₹6,000 (Futura, Carysil)',
+        platinum: 'Upto ₹6,000 (Futura, Carysil)',
+      },
+      {
+        name: 'Sink Faucet',
+        silver: 'Upto ₹1,000',
+        gold: 'Upto ₹2,000',
+        platinum: 'Upto ₹2,000',
+      },
+      {
+        name: 'Sink Accessories',
+        silver: 'Parryware',
+        gold: 'Parryware / Hindware',
+        platinum: 'Parryware / Hindware / Jaquar',
+      },
+    ],
+  },
+  {
+    category: 'Bathroom (All fittings can be customised at cost)',
+    features: [
+      {
+        name: 'Ceramic Wall Dado',
+        silver: 'Upto ₹30 per sqft',
+        gold: 'Upto ₹40 per sqft',
+        platinum: 'Upto ₹50 per sqft',
+      },
+      {
+        name: 'Sanitary & CP fittings',
+        silver: 'Upto ₹30,000 per 1000 sqft (Parryware)',
+        gold: 'Upto ₹40,000 per 1000 sqft (Parryware / Hindware)',
+        platinum: 'Upto ₹50,000 per 1000 sqft (Parryware / Hindware / Jaquar)',
+      },
+      {
+        name: 'CPVC Pipe',
+        silver: 'Prince',
+        gold: 'Supreme',
+        platinum: 'Supreme / Ashirvad',
+      },
+      {
+        name: 'Bathroom doors',
+        silver: 'Aluminium',
+        gold: 'UPVC / WPC',
+        platinum: 'UPVC / WPC',
+      },
+    ],
+  },
+  {
+    category: 'Doors & Windows',
+    features: [
+      {
+        name: 'Main Door',
+        silver: 'Iron Door upto ₹30,000 including accessories',
+        gold: 'Stainless Steel upto ₹40,000 including accessories',
+        platinum: 'Stainless Steel | Teak Wood ₹50,000 including accessories',
+      },
+      {
+        name: 'Internal Doors',
+        silver: 'MR Ply Board Waterproof With Laminates upto ₹10,000',
+        gold: 'Century Ply Board Waterproof With Laminates upto ₹11,000',
+        platinum: 'Green / Century Ply Board Waterproof With Laminates upto ₹13,000',
+      },
+      {
+        name: 'Puja Room Door',
+        silver: 'WPC With frame worth ₹4,000 for every Puja Room',
+        gold: 'WPC With frame worth ₹5,000 for every Puja Room',
+        platinum: 'WPC With frame worth ₹6,000 for every Puja Room',
+      },
+      {
+        name: 'Windows',
+        silver: 'Aluminium windows ₹300 per sqft',
+        gold: 'UPVC windows ₹400 per sqft',
+        platinum: 'UPVC windows ₹500 per sqft',
+      },
+      {
+        name: 'Window grills',
+        silver: 'No',
+        gold: 'Yes',
+        platinum: 'Yes',
+      },
+    ],
+  },
+  {
+    category: 'Painting',
+    features: [
+      {
+        name: 'Interior Painting (Asian Paints)',
+        silver: 'JK Putty + Primer + Tractor Shyne Emulsion',
+        gold: 'JK Putty + Primer + Tractor Shyne Emulsion',
+        platinum: 'JK Putty + Primer + Royale Luxury Emulsion',
+      },
+      {
+        name: 'Exterior Painting (Asian Paints)',
+        silver: 'Primer + Apex Exterior Emulsion',
+        gold: 'Primer + Apex Exterior Emulsion',
+        platinum: 'Primer + Apex Ultima Exterior Emulsion',
+      },
+    ],
+  },
+  {
+    category: 'Flooring (Laying charges will vary for marble tiles and granite)',
+    features: [
+      {
+        name: 'Living & Dining Flooring',
+        silver: 'Varmora / Kajaria Upto ₹60 per sqft',
+        gold: 'Kajaria / Johnson Upto ₹80 per sqft',
+        platinum: 'Kajaria / Johnson / Somany Upto ₹100 per sqft',
+      },
+      {
+        name: 'Rooms and Kitchen Flooring',
+        silver: 'Varmora / Kajaria Upto ₹60 per sqft',
+        gold: 'Kajaria / Johnson Upto ₹80 per sqft',
+        platinum: 'Kajaria / Johnson / Somany Upto ₹100 per sqft',
+      },
+      {
+        name: 'Balcony and Open Area',
+        silver: 'Varmora / Kajaria Upto ₹60 per sqft',
+        gold: 'Kajaria / Johnson Upto ₹80 per sqft',
+        platinum: 'Kajaria / Johnson / Somany Upto ₹100 per sqft',
+      },
+      {
+        name: 'Staircase',
+        silver: 'Upto ₹60 per sqft',
+        gold: 'Upto ₹70 per sqft',
+        platinum: 'Upto ₹80 per sqft',
+      },
+      {
+        name: 'Parking',
+        silver: 'Tiles upto ₹40 per sqft',
+        gold: 'Tiles upto ₹70 per sqft',
+        platinum: 'Tiles upto ₹70 per sqft',
+      },
+    ],
+  },
+  {
+    category: 'Wiring & Electrical',
+    features: [
+      {
+        name: 'Fire proof Wiring',
+        silver: 'Anchor',
+        gold: 'Anchor / Polycab',
+        platinum: 'Anchor / Polycab / Havells',
+      },
+      {
+        name: 'Switch',
+        silver: 'Anchor',
+        gold: 'Anchor / Polycab',
+        platinum: 'Anchor / Polycab / Havells',
+      },
+      {
+        name: 'Socket',
+        silver: 'Anchor',
+        gold: 'Anchor / Polycab',
+        platinum: 'Anchor / Polycab / Havells',
+      },
+      {
+        name: 'Provision for UPS Wiring',
+        silver: 'Malhotra',
+        gold: 'Malhotra / Anchor',
+        platinum: 'Anchor / Polycab',
+      },
+    ],
+  },
+  {
+    category: 'Others & Infrastructure',
+    features: [
+      {
+        name: 'Borewell & Water Tank',
+        silver: '1500 Ltrs. of Apollo / equivalent make',
+        gold: '2000 Ltrs. of Sintex / equivalent make',
+        platinum: '2000 Ltrs. of Sintex / equivalent make',
+      },
+      {
+        name: 'Septic Tank',
+        silver: '800 Ltrs.',
+        gold: '1,000 Ltrs.',
+        platinum: '12,000 Ltrs.',
+      },
+      {
+        name: 'Staircase railing',
+        silver: 'MS Railing',
+        gold: 'SS 304 grade Railing',
+        platinum: 'SS 304 grade Railing with glass',
+      },
+      {
+        name: 'Mumty',
+        silver: '₹1,200 per sqft',
+        gold: '₹1,200 per sqft',
+        platinum: '₹1,200 per sqft',
+      },
+      {
+        name: 'Brick Parapet Wall (4 inch)',
+        silver: '(Material + Labour Cost) ₹240 per sqft',
+        gold: '(Material + Labour Cost) ₹240 per sqft',
+        platinum: '(Material + Labour Cost) ₹240 per sqft',
+      },
+      {
+        name: 'Basement / Raft Foundation',
+        silver: '(R.C.C. 6 inch) ₹400 per sqft',
+        gold: '(R.C.C. 8 inch) ₹500 per sqft',
+        platinum: '(R.C.C. 10 inch) ₹640 per sqft',
+      },
+    ],
+  },
+];
+
+export function buildConstructionPackageWhatsAppLink(packageName: string, rate: number, areaSqft?: number): string {
+  let msg = `Hello Global Infraspace,\n\nI am interested in choosing the *${packageName} Construction Package* (₹${rate.toLocaleString('en-IN')}/sq.ft) for my project.`;
+  if (areaSqft && areaSqft > 0) {
+    const total = areaSqft * rate;
+    msg += `\n\n• Estimated Built-up Area: ${areaSqft.toLocaleString('en-IN')} sq.ft\n• Estimated Construction Budget: ₹${total.toLocaleString('en-IN')}`;
+  }
+  msg += `\n\nPlease share the detailed material schedule, payment stages, and arrange an engineering consultation.`;
+  return buildWhatsAppLink(msg);
+}

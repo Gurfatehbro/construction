@@ -9,12 +9,12 @@ export default function PackagesPage() {
       {/* Header */}
       <section className="border-b border-border bg-surface py-16 sm:py-20">
         <div className="container-wide text-center max-w-4xl mx-auto">
-          <p className="eyebrow">Design &amp; Engineering Pricing</p>
+          <p className="eyebrow">Turnkey Construction &amp; Design Pricing</p>
           <h1 className="mt-4 font-serif text-4xl sm:text-5xl lg:text-6xl text-white">
-            Architectural &amp; Structural Design Packages
+            Construction &amp; Architectural Packages
           </h1>
           <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-            Clear, transparent rates per square foot (₹10, ₹15, ₹30) for architectural planning, 3D front elevations, plumbing, electrical, and structural reinforcement drawings in Patna.
+            Transparent per-sq.ft rates for turnkey building construction (Silver ₹1,800, Gold ₹2,000, Platinum ₹2,300) and architectural planning (₹10, ₹15, ₹30) with certified branded materials and on-site engineering.
           </p>
         </div>
       </section>
