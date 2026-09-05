@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Search, Phone } from 'lucide-react';
 import { ALL_SERVICES, CONTACT, buildWhatsAppLink } from '@/data/content';
+import VastuCalculator from '@/components/VastuCalculator';
 
 export default function ServicesPage() {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
@@ -134,6 +135,9 @@ export default function ServicesPage() {
           )}
         </div>
       </section>
+
+      {/* Vastu Shastra Planning Tool */}
+      <VastuCalculator />
 
       {/* CTA */}
       <section className="border-t border-border bg-surface py-16">

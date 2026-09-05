@@ -87,9 +87,9 @@ export default function Services() {
           <div className="reveal">
             <div className="flex h-full flex-col justify-between bg-surface p-8">
               <div>
-                <h3 className="font-serif text-2xl text-white">18 services in total</h3>
+                <h3 className="font-serif text-2xl text-white">42 services in total</h3>
                 <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                  Painting, false ceiling, plumbing, flooring, waterproofing, kitchen and bathroom remodeling, structural repairs, metal buildings, maintenance and civil engineering consultation.
+                  Vastu Shastra architectural planning, 3D elevations, building construction, turnkey interiors, swimming pools, MEP engineering, and structural repairs.
                 </p>
               </div>
               <Link
