@@ -31,7 +31,7 @@ export default function Hero() {
 
       <div className="container-wide relative pb-24 pt-40 z-10">
         <div className="reveal is-visible">
-          <p className="eyebrow">Patna · Bihar</p>
+          <p className="eyebrow">Architecture · Construction · Interiors</p>
 
           <h1 className="mt-6 max-w-4xl text-[2.6rem] font-serif leading-[1.05] sm:text-6xl lg:text-7xl uppercase tracking-tight text-white">
             DESIGNING SPACES.

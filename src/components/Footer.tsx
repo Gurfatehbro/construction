@@ -15,7 +15,7 @@ export default function Footer() {
             <Logo />
           </Link>
           <p className="mt-6 max-w-xs text-sm leading-relaxed text-muted-foreground">
-            Construction, interiors, 3D architectural design and specialised building solutions for clients across Patna and Bihar.
+            Construction, interiors, 3D architectural design and specialised building solutions delivering quality homes and commercial spaces.
           </p>
         </div>
 
@@ -93,6 +93,11 @@ export default function Footer() {
             <li>
               <Link to="/blog" className="hover:text-gold">
                 Blog
+              </Link>
+            </li>
+            <li>
+              <Link to="/packages" className="hover:text-gold text-gold font-medium">
+                Design Packages
               </Link>
             </li>
             <li>

@@ -18,7 +18,7 @@ export default function WhyUs() {
     {
       num: '04',
       title: 'Local, on-site supervision',
-      desc: 'Our team is based at Gandhi Maidan, Patna. Site visits, checks and corrections happen in person, not over the phone.',
+      desc: 'Our team is based at Gandhi Maidan. Site visits, checks and corrections happen in person, not over the phone.',
     },
   ];
 

@@ -34,7 +34,7 @@ export default function ContactPage() {
             Contact Global Infraspace
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground">
-            Connect with our office at Gandhi Maidan, Patna or send your project inquiry for a fast, structured consultation.
+            Connect with our office at Gandhi Maidan or send your project inquiry for a fast, structured consultation.
           </p>
         </div>
       </section>
@@ -96,13 +96,13 @@ export default function ContactPage() {
 
                 <div>
                   <label className="block text-[0.7rem] uppercase tracking-[0.18em] text-muted-foreground mb-2">
-                    Site Location in Patna
+                    Site / Plot Location
                   </label>
                   <input
                     type="text"
                     value={location}
                     onChange={(e) => setLocation(e.target.value)}
-                    placeholder="e.g. Gandhi Maidan, Bailey Road"
+                    placeholder="e.g. Area, Sector or City"
                     className="w-full bg-[#0B0C0E] border border-border px-4 py-3.5 text-sm text-white placeholder:text-neutral-600 focus:border-gold focus:outline-none transition-colors"
                   />
                 </div>

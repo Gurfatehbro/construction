@@ -33,10 +33,10 @@ export default function ServicesPage() {
         <div className="container-wide">
           <p className="eyebrow">Complete Capabilities</p>
           <h1 className="mt-4 font-serif text-4xl sm:text-5xl lg:text-6xl text-white max-w-4xl">
-            18 Construction &amp; Interior Services in Patna
+            42 Construction &amp; Interior Services
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground">
-            From 3D architectural elevations and turnkey building construction to luxury interiors, swimming pools, and independent engineering advice.
+            From 3D architectural elevations and turnkey building construction to luxury interiors, swimming pools, and independent engineering advice. 6 specialized services across every category.
           </p>
         </div>
       </section>
@@ -45,19 +45,22 @@ export default function ServicesPage() {
       <section className="border-b border-border bg-[#0E0F12] py-4 sticky top-20 z-30">
         <div className="container-wide flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div className="flex flex-wrap gap-2">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setSelectedCategory(cat)}
-                className={`px-3 py-1.5 text-[0.68rem] uppercase tracking-[0.14em] transition-colors ${
-                  selectedCategory === cat
-                    ? 'bg-gold text-black font-semibold'
-                    : 'bg-surface text-muted-foreground hover:text-white border border-border'
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
+            {categories.map((cat) => {
+              const count = cat === 'All' ? ALL_SERVICES.length : ALL_SERVICES.filter(s => s.category === cat).length;
+              return (
+                <button
+                  key={cat}
+                  onClick={() => setSelectedCategory(cat)}
+                  className={`px-3 py-1.5 text-[0.68rem] uppercase tracking-[0.14em] transition-colors ${
+                    selectedCategory === cat
+                      ? 'bg-gold text-black font-semibold'
+                      : 'bg-surface text-muted-foreground hover:text-white border border-border'
+                  }`}
+                >
+                  {cat} ({count})
+                </button>
+              );
+            })}
           </div>
 
           <div className="relative min-w-[240px]">
@@ -66,7 +69,7 @@ export default function ServicesPage() {
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search 18 services..."
+              placeholder="Search 42 services..."
               className="w-full bg-surface border border-border pl-9 pr-3 py-1.5 text-xs text-white placeholder:text-neutral-500 focus:border-gold focus:outline-none"
             />
           </div>
@@ -87,6 +90,9 @@ export default function ServicesPage() {
                     src={service.image}
                     alt={service.title}
                     loading="lazy"
+                    onError={(e) => {
+                      e.currentTarget.src = '/images/architectural-elevation.jpg';
+                    }}
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <span className="absolute top-3 left-3 bg-background/80 border border-white/10 px-2.5 py-1 text-[0.65rem] uppercase tracking-[0.15em] text-gold backdrop-blur-sm">
@@ -133,7 +139,7 @@ export default function ServicesPage() {
       <section className="border-t border-border bg-surface py-16">
         <div className="container-wide flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
-            <h3 className="font-serif text-2xl text-white">Have a custom architectural or civil inquiry in Patna?</h3>
+            <h3 className="font-serif text-2xl text-white">Have a custom architectural or civil inquiry?</h3>
             <p className="mt-2 text-sm text-muted-foreground">Speak directly with our principal civil engineering team.</p>
           </div>
           <div className="flex gap-4">

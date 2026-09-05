@@ -13,7 +13,7 @@ const FEATURED_SERVICES = [
   {
     slug: 'building-construction',
     title: 'Building Construction',
-    desc: 'End-to-end residential and commercial construction in Patna, from foundation and RCC to finishing and handover.',
+    desc: 'End-to-end residential and commercial construction, from foundation and RCC to finishing and handover.',
     image: IMAGES.serviceConstruction,
     alt: 'Reinforced concrete frame of a multi-storey building under construction with site engineers',
   },

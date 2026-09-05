@@ -10,10 +10,10 @@ export default function ProjectsPage() {
         <div className="container-wide">
           <p className="eyebrow">Portfolio &amp; Executions</p>
           <h1 className="mt-4 font-serif text-4xl sm:text-5xl lg:text-6xl text-white max-w-4xl">
-            Selected Works &amp; Architectural Projects in Patna
+            Selected Works &amp; Architectural Projects
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground">
-            A showcase of modern residential villas, commercial structures, luxury interior spaces, swimming pools and acoustic home theaters across Bihar.
+            A showcase of modern residential villas, commercial structures, luxury interior spaces, swimming pools and acoustic home theaters.
           </p>
         </div>
       </section>
@@ -31,6 +31,9 @@ export default function ProjectsPage() {
                   src={item.image}
                   alt={item.title}
                   loading="lazy"
+                  onError={(e) => {
+                    e.currentTarget.src = '/images/building-construction.jpg';
+                  }}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <span className="absolute top-3 left-3 bg-background/85 border border-white/10 px-2.5 py-1 text-[0.65rem] uppercase tracking-[0.16em] text-gold backdrop-blur-sm">
@@ -65,7 +68,7 @@ export default function ProjectsPage() {
       <section className="border-t border-border bg-surface py-16">
         <div className="container-wide flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
-            <h3 className="font-serif text-2xl text-white">Have a specific design or plot in Patna?</h3>
+            <h3 className="font-serif text-2xl text-white">Have a specific design or plot in mind?</h3>
             <p className="mt-2 text-sm text-muted-foreground">Let's review your floor plan, plot size, and aesthetic direction.</p>
           </div>
           <Link to="/book-consultation" className="btn-base btn-gold">

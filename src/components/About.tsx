@@ -9,14 +9,14 @@ export default function About() {
         <div className="reveal">
           <span className="rule-gold" />
           <h2 className="mt-8 font-serif text-3xl leading-tight sm:text-4xl text-white">
-            A single team for design, construction and interiors in Patna
+            A single team for design, construction and interiors
           </h2>
         </div>
 
         {/* Right Column */}
         <div className="reveal space-y-6 text-base leading-relaxed text-muted-foreground">
           <p>
-            Global Infraspace works with homeowners, businesses and property owners across Patna who want one accountable partner instead of a chain of separate contractors. We plan the space, visualise it in 3D, build the structure and finish the interiors.
+            Global Infraspace works with homeowners, businesses and property owners who want one accountable partner instead of a chain of separate contractors. We plan the space, visualise it in 3D, build the structure and finish the interiors.
           </p>
           <p>
             Our work spans new residential and commercial construction, complete interiors, swimming pools, home theaters, waterproofing, remodeling and structural repair — along with independent civil engineering advice when you simply need a clear answer before committing money.

@@ -13,7 +13,7 @@ export default function AboutPage() {
             Designing Spaces. Building Futures.
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground">
-            A Patna-based construction, interior design and 3D architectural design company delivering homes, commercial spaces, pools and specialised interiors.
+            A premier construction, interior design and 3D architectural design company delivering homes, commercial spaces, pools and specialised interiors.
           </p>
         </div>
       </section>
@@ -28,7 +28,7 @@ export default function AboutPage() {
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                Global Infraspace was founded in Patna to eliminate the persistent disconnect between architectural designers, civil contractors, and interior craftsmen. Too often in Bihar, homeowners and developers face delays, cost overruns, and compromised quality because each trade works in silos.
+                Global Infraspace was founded to eliminate the persistent disconnect between architectural designers, civil contractors, and interior craftsmen. Homeowners and developers often face delays, cost overruns, and compromised quality because each trade works in silos.
               </p>
               <p>
                 We bring complete end-to-end delivery under one management standard. We plan your layout, render it in photorealistic 3D, build the reinforced concrete structure, and execute the bespoke interior finishes with full on-site civil engineering supervision.
@@ -52,14 +52,14 @@ export default function AboutPage() {
             <div className="aspect-[4/3] overflow-hidden border border-border bg-surface">
               <img
                 src={IMAGES.serviceConstruction}
-                alt="Global Infraspace construction site supervision in Patna"
+                alt="Global Infraspace construction site supervision"
                 className="h-full w-full object-cover"
               />
             </div>
             <div className="mt-4 p-6 bg-surface border border-border">
-              <span className="text-xs uppercase tracking-[0.2em] text-gold font-medium">Headquartered in Patna</span>
+              <span className="text-xs uppercase tracking-[0.2em] text-gold font-medium">Head Office</span>
               <p className="mt-2 text-sm text-neutral-300">
-                3rd Floor, The Hub, Near Regent Cinema, Gandhi Maidan, Patna, Bihar – 800001
+                3rd Floor, The Hub, Near Regent Cinema, Gandhi Maidan – 800001
               </p>
             </div>
           </div>
@@ -91,9 +91,9 @@ export default function AboutPage() {
 
             <div className="p-8 bg-background border border-border">
               <span className="text-xs tracking-[0.3em] text-gold font-medium">03</span>
-              <h3 className="font-serif text-2xl text-white mt-4">Local Site Supervision</h3>
+              <h3 className="font-serif text-2xl text-white mt-4">Direct Site Supervision</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                Our site engineers conduct daily in-person inspections across Patna to guarantee structural integrity and finish quality.
+                Our site engineers conduct daily in-person inspections to guarantee structural integrity and finish quality.
               </p>
             </div>
           </div>

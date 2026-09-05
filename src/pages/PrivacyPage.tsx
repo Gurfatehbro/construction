@@ -18,7 +18,7 @@ export default function PrivacyPage() {
           </p>
           <h2 className="font-serif text-2xl text-white mt-8">Information We Collect</h2>
           <p>
-            We collect information provided directly by you, such as your name, phone number, project type, site address in Patna, and architectural requirements when you request a consultation or quotation.
+            We collect information provided directly by you, such as your name, phone number, project type, site address, and architectural requirements when you request a consultation or quotation.
           </p>
           <h2 className="font-serif text-2xl text-white mt-8">How We Use Information</h2>
           <p>

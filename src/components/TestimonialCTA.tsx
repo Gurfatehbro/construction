@@ -33,13 +33,13 @@ export default function TestimonialCTA() {
         </div>
       </section>
 
-      {/* Section: Planning a project in Patna? Let's talk. */}
+      {/* Section: Planning a project? Let's talk. */}
       <section className="border-y border-border bg-surface">
         <div className="container-wide py-20">
           <div className="reveal">
             <span className="rule-gold" />
             <h2 className="mt-8 max-w-2xl font-serif text-3xl leading-tight sm:text-4xl text-white">
-              Planning a project in Patna? Let's talk.
+              Planning a project? Let's talk.
             </h2>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground">
               Book a consultation at our Gandhi Maidan office or on your site. Bring your plot papers, plans or reference images and we will give you a clear direction, timeline and cost range.

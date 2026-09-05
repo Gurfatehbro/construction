@@ -34,7 +34,7 @@ export default function BookConsultationPage() {
             Book a Project Consultation
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground">
-            Schedule a meeting at our Gandhi Maidan office in Patna or arrange an on-site visit for your residential or commercial project.
+            Schedule a meeting at our Gandhi Maidan office or arrange an on-site visit for your residential or commercial project.
           </p>
         </div>
       </section>
@@ -100,13 +100,13 @@ export default function BookConsultationPage() {
 
                 <div>
                   <label className="block text-[0.7rem] uppercase tracking-[0.18em] text-muted-foreground mb-2">
-                    Plot / Site Location in Patna
+                    Plot / Site Location
                   </label>
                   <input
                     type="text"
                     value={location}
                     onChange={(e) => setLocation(e.target.value)}
-                    placeholder="e.g. Gandhi Maidan, Boring Road"
+                    placeholder="e.g. Area, Sector or City"
                     className="w-full bg-[#0B0C0E] border border-border px-4 py-3.5 text-sm text-white placeholder:text-neutral-600 focus:border-gold focus:outline-none transition-colors"
                   />
                 </div>
@@ -164,7 +164,7 @@ export default function BookConsultationPage() {
             </div>
 
             <div className="bg-surface border border-border p-8">
-              <span className="text-xs uppercase tracking-[0.2em] text-gold font-medium">Patna Office</span>
+              <span className="text-xs uppercase tracking-[0.2em] text-gold font-medium">Head Office</span>
               <h3 className="font-serif text-2xl text-white mt-2">Visit in Person</h3>
               <div className="mt-4 space-y-3 text-sm text-muted-foreground">
                 <p className="flex items-start gap-3">

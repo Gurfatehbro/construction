@@ -33,7 +33,7 @@ export default function Contact() {
             Send an Enquiry or Visit Our Office
           </h2>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-            Get an exact estimate, structural review, or 3D architectural plan for your residential or commercial project in Patna.
+            Get an exact estimate, structural review, or 3D architectural plan for your residential or commercial project.
           </p>
         </div>
 
@@ -92,13 +92,13 @@ export default function Contact() {
 
                 <div>
                   <label className="block text-[0.7rem] uppercase tracking-[0.16em] text-muted-foreground mb-2">
-                    Site Location in Patna
+                    Site / Plot Location
                   </label>
                   <input
                     type="text"
                     value={location}
                     onChange={(e) => setLocation(e.target.value)}
-                    placeholder="e.g. Gandhi Maidan, Bailey Road"
+                    placeholder="e.g. Area, Sector or City"
                     className="w-full bg-[#0B0C0E] border border-border px-4 py-3 text-sm text-white placeholder:text-neutral-600 focus:border-gold focus:outline-none transition-colors"
                   />
                 </div>

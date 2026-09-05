@@ -19,7 +19,7 @@ export default function ServiceDetailPage() {
           </Link>
           <span className="eyebrow block">{service.category}</span>
           <h1 className="mt-4 font-serif text-4xl sm:text-5xl lg:text-6xl text-white max-w-4xl">
-            {service.title} in Patna
+            {service.title}
           </h1>
           <p className="mt-6 max-w-3xl text-base sm:text-lg leading-relaxed text-muted-foreground">
             {service.description}
@@ -35,6 +35,9 @@ export default function ServiceDetailPage() {
               <img
                 src={service.image}
                 alt={service.title}
+                onError={(e) => {
+                  e.currentTarget.src = '/images/architectural-elevation.jpg';
+                }}
                 className="h-full w-full object-cover"
               />
             </div>
@@ -43,7 +46,7 @@ export default function ServiceDetailPage() {
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>{service.fullDetails}</p>
               <p>
-                All works executed under Global Infraspace follow Indian Standard (IS) codes, verified material brands, and daily quality checklists supervised by site engineers in Patna.
+                All works executed under Global Infraspace follow Indian Standard (IS) codes, verified material brands, and daily quality checklists supervised by senior site engineers.
               </p>
             </div>
 
@@ -64,7 +67,7 @@ export default function ServiceDetailPage() {
               <span className="text-xs uppercase tracking-[0.2em] text-gold font-medium">Ready to Discuss?</span>
               <h3 className="font-serif text-2xl text-white mt-2">Book Consultation for {service.title}</h3>
               <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
-                Meet our design &amp; engineering team at our Gandhi Maidan office in Patna or arrange a site visit for plot assessment.
+                Meet our design &amp; engineering team at our Gandhi Maidan office or arrange a site visit for plot assessment.
               </p>
 
               <div className="mt-8 space-y-4">
@@ -75,7 +78,7 @@ export default function ServiceDetailPage() {
                   Book Consultation
                 </Link>
                 <a
-                  href={buildWhatsAppLink(`Hello Global Infraspace, I would like to consult on ${service.title} in Patna.`)}
+                  href={buildWhatsAppLink(`Hello Global Infraspace, I would like to consult on ${service.title}.`)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full btn-base btn-outline text-center block"
@@ -87,7 +90,7 @@ export default function ServiceDetailPage() {
               <div className="mt-8 pt-6 border-t border-border space-y-3 text-xs text-muted-foreground">
                 <div className="flex items-start gap-2">
                   <MapPin size={14} className="text-gold shrink-0 mt-0.5" />
-                  <span>3rd Floor, The Hub, Gandhi Maidan, Patna – 800001</span>
+                  <span>3rd Floor, The Hub, Gandhi Maidan – 800001</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone size={14} className="text-gold shrink-0" />

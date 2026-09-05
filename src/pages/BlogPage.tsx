@@ -18,7 +18,7 @@ export default function BlogPage() {
             Construction &amp; Architectural Insights
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground">
-            Clear, honest articles covering construction cost estimation in Patna, Bihar building bylaws, 3D visualization benefits, and civil engineering guides.
+            Clear, honest articles covering construction cost estimation, building bylaws, 3D visualization benefits, and civil engineering guides.
           </p>
         </div>
       </section>
@@ -49,7 +49,7 @@ export default function BlogPage() {
 
               <div className="mt-12 p-8 bg-surface border border-border flex flex-col sm:flex-row items-center justify-between gap-6">
                 <div>
-                  <h3 className="font-serif text-2xl text-white">Planning your project in Patna?</h3>
+                  <h3 className="font-serif text-2xl text-white">Planning your next project?</h3>
                   <p className="text-sm text-muted-foreground mt-1">Get an exact line-item material quotation and 3D architectural plan.</p>
                 </div>
                 <Link to="/book-consultation" className="btn-base btn-gold whitespace-nowrap">
