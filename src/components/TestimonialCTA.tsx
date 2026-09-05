@@ -4,31 +4,55 @@ import { CONTACT, buildWhatsAppLink } from '@/data/content';
 export default function TestimonialCTA() {
   return (
     <>
-      {/* Section: Client Feedback */}
-      <section className="border-b border-border bg-background">
-        <div className="container-wide grid gap-10 py-20 lg:grid-cols-2">
+      {/* Section: Awards & Recognition */}
+      <section className="border-b border-border bg-background py-20 sm:py-24">
+        <div className="container-wide grid gap-12 lg:grid-cols-2 items-center">
           <div className="reveal">
-            <p className="eyebrow">Client feedback</p>
-            <h2 className="mt-5 font-serif text-3xl leading-tight sm:text-4xl text-white">
-              Reviews are published only when they are real
+            <p className="eyebrow">Award &amp; Recognition</p>
+            <h2 className="mt-5 font-serif text-3xl sm:text-4xl lg:text-5xl leading-tight text-white">
+              Recognized for Excellence &amp; Client Trust
             </h2>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              Global Infraspace is honored as a <strong className="text-gold font-medium">Justdial Users' Choice 2026</strong> verified 5-star recipient for architectural design, turnkey construction, and luxury interior execution.
+            </p>
+
+            <div className="mt-8 flex flex-wrap items-center gap-4 p-4 bg-surface border border-border">
+              <div className="flex text-gold text-xl tracking-widest">
+                ★★★★★
+              </div>
+              <div className="text-xs uppercase tracking-[0.16em] text-neutral-300 font-semibold border-l border-border pl-4">
+                Users' Choice 2026 · Justdial Verified
+              </div>
+            </div>
+
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Link to="/book-consultation" className="btn-base btn-gold">
+                Book a Consultation
+              </Link>
+              <a
+                href={buildWhatsAppLink("Hello Global Infraspace, I noticed your Justdial Users' Choice recognition and would like to discuss my project.")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-base btn-outline hover:border-gold hover:text-gold"
+              >
+                Discuss on WhatsApp
+              </a>
+            </div>
           </div>
 
-          <div className="reveal text-base leading-relaxed text-muted-foreground">
-            <p>
-              We do not publish invented testimonials, statistics or awards. Verified client reviews will appear here and on our Google Business Profile as they are received.
-            </p>
-            <p className="mt-4">
-              If you have worked with Global Infraspace, we would be glad to have your honest feedback on Google.
-            </p>
-            <a
-              href={buildWhatsAppLink("Hello Global Infraspace, I have worked with you and would like to share feedback.")}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-base btn-outline mt-8 hover:border-gold hover:text-gold inline-block"
-            >
-              Share feedback
-            </a>
+          <div className="reveal flex justify-center">
+            <div className="relative group max-w-md w-full overflow-hidden border border-gold/30 bg-[#121316] p-3 shadow-2xl shadow-black/60 transition-all hover:border-gold">
+              <img
+                src="/images/justdial-award.png"
+                alt="Global Infraspace - Justdial Users' Choice 2026 Award"
+                className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-[1.02]"
+              />
+              <div className="pt-3 pb-1 text-center">
+                <p className="text-[0.7rem] uppercase tracking-[0.18em] text-gold font-semibold">
+                  Official Justdial Users' Choice 2026 Certificate
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

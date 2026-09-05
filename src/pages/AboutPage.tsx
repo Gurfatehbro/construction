@@ -99,6 +99,53 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* Recognition & Certification */}
+      <section className="border-b border-border bg-background py-20">
+        <div className="container-wide grid gap-12 lg:grid-cols-2 items-center">
+          <div className="flex justify-center">
+            <div className="relative group max-w-md w-full overflow-hidden border border-gold/40 bg-[#121316] p-3 shadow-2xl">
+              <img
+                src="/images/justdial-award.png"
+                alt="Justdial Users' Choice 2026 - Global Infraspace"
+                className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-[1.02]"
+              />
+              <div className="pt-3 pb-1 text-center">
+                <span className="text-xs uppercase tracking-[0.2em] text-gold font-semibold">
+                  Official Justdial Users' Choice 2026 Award
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <span className="rule-gold" />
+            <p className="eyebrow mt-6">Industry Recognition</p>
+            <h2 className="mt-3 font-serif text-3xl sm:text-4xl text-white leading-tight">
+              Honored as Justdial Users' Choice 2026
+            </h2>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              Recognized for high standards of structural engineering, architectural precision, and transparent turnkey execution. We are proud to hold 5-star client satisfaction across our design, construction, and interior portfolio.
+            </p>
+
+            <div className="mt-8 flex items-center gap-4 p-4 bg-surface border border-border">
+              <span className="text-gold text-2xl tracking-widest">★★★★★</span>
+              <span className="text-xs uppercase tracking-[0.16em] text-neutral-300 font-medium border-l border-border pl-4">
+                Verified 5-Star Customer Rating
+              </span>
+            </div>
+
+            <div className="mt-8 flex gap-4">
+              <Link to="/book-consultation" className="btn-base btn-gold">
+                Book Consultation
+              </Link>
+              <Link to="/projects" className="btn-base btn-outline">
+                View Portfolio
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
