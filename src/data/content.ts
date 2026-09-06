@@ -475,6 +475,62 @@ export const ALL_SERVICES: ServiceItem[] = [
 
 export const GALLERY_ITEMS = [
   {
+    id: 'ai-luxury-villa-facade-dusk',
+    title: 'Ultra-Luxury 3-Storey Architectural Villa Facade at Dusk',
+    category: '3D Design',
+    location: 'Executive Villa Concept',
+    image: '/images/gallery-ai-luxury-villa-facade.jpg',
+  },
+  {
+    id: 'ai-rooftop-infinity-pool-deck',
+    title: 'Skyline Glass-Edge Rooftop Infinity Pool & Lounge Deck',
+    category: 'Swimming Pool',
+    location: 'Rooftop Luxury Suite',
+    image: '/images/gallery-ai-rooftop-infinity-pool.jpg',
+  },
+  {
+    id: 'ai-luxury-home-theater-cinema',
+    title: 'Private Luxury Cinema Suite with Starlight Ceiling & Acoustic Paneling',
+    category: 'Home Theater',
+    location: 'Custom Acoustic Screening Room',
+    image: '/images/gallery-ai-luxury-home-theater.jpg',
+  },
+  {
+    id: 'ai-double-height-living-room',
+    title: 'Double-Height Grand Living Room with Statuario Marble & Floating Staircase',
+    category: 'Interiors',
+    location: 'Private Villa Interior',
+    image: '/images/gallery-ai-luxury-living-interior.jpg',
+  },
+  {
+    id: 'arch-dream-house-elevation-palette',
+    title: 'Arch Dream House Multi-Tier Elevation & Asian Paints Palette',
+    category: '3D Design',
+    location: 'Color & Dimensional Elevation Plan',
+    image: '/images/gallery-arch-dream-house-elevation.png',
+  },
+  {
+    id: 'site-pool-raft-curing-execution',
+    title: 'On-Site Raft Slab Casting & Foundation Water Curing',
+    category: 'Construction',
+    location: 'Civil Project Site Execution',
+    image: '/images/gallery-site-pool-raft-curing.jpg',
+  },
+  {
+    id: 'classical-ganesha-brick-facade-drawing',
+    title: 'Classical Hand-Rendered Brick Villa Elevation with Ganesha Jali',
+    category: '3D Design',
+    location: 'Architectural Concept Drafting',
+    image: '/images/gallery-ganesha-brick-facade-drawing.jpg',
+  },
+  {
+    id: '18x35-2bhk-rendered-floor-plan',
+    title: "Rendered 18' × 35' 2BHK Space-Optimized Residential Floor Plan",
+    category: 'Floor Plans',
+    location: 'Interior Layout Blueprint',
+    image: '/images/gallery-18x35-2bhk-rendered-plan.png',
+  },
+  {
     id: 'structural-foundation-plinth-brickwork',
     title: 'Site Foundation & Plinth Level Reinforced Brickwork',
     category: 'Construction',
