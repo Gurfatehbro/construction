@@ -119,15 +119,15 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full btn-base btn-gold flex items-center justify-center gap-2 py-4"
+                className="w-full btn-base btn-gold flex items-center justify-center gap-2 py-4 tracking-wider uppercase text-xs font-semibold"
               >
                 {sent ? (
                   <>
-                    <CheckCircle2 size={16} /> Opening WhatsApp...
+                    <CheckCircle2 size={16} /> Booking Consultation...
                   </>
                 ) : (
                   <>
-                    <Send size={14} /> Send WhatsApp Enquiry
+                    <Send size={14} /> Book Consultation
                   </>
                 )}
               </button>
