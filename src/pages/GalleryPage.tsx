@@ -6,7 +6,7 @@ export default function GalleryPage() {
   const [activeTab, setActiveTab] = useState('All');
   const [selectedItem, setSelectedItem] = useState<(typeof GALLERY_ITEMS)[0] | null>(null);
 
-  const categories = ['All', '3D Design', 'Construction', 'Interiors', 'Swimming Pool', 'Home Theater', 'Commercial'];
+  const categories = ['All', '3D Design', 'Floor Plans', 'Construction', 'Interiors', 'Swimming Pool', 'Home Theater', 'Commercial'];
 
   const items = activeTab === 'All'
     ? GALLERY_ITEMS
@@ -22,7 +22,7 @@ export default function GalleryPage() {
             Architectural &amp; Civil Gallery
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground">
-            Explore our latest 3D elevations, structural villa executions, luxury swimming pools, and turnkey interior designs. Click on any image to view in high resolution and inquire directly.
+            Explore our latest 3D elevations, structural villa executions, luxury swimming pools, architectural CAD floor plans, and turnkey interior designs. Click on any image to view in high resolution and inquire directly.
           </p>
         </div>
       </section>

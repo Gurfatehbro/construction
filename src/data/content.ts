@@ -475,6 +475,41 @@ export const ALL_SERVICES: ServiceItem[] = [
 
 export const GALLERY_ITEMS = [
   {
+    id: 'structural-foundation-plinth-brickwork',
+    title: 'Site Foundation & Plinth Level Reinforced Brickwork',
+    category: 'Construction',
+    location: 'On-Site Civil Execution',
+    image: '/images/gallery-foundation-plinth-brickwork.jpg',
+  },
+  {
+    id: 'indoor-mosaic-swimming-pool-wellness',
+    title: 'Indoor Mosaic Swimming Pool with Granite Cladding & SS Ladder',
+    category: 'Swimming Pool',
+    location: 'Private Residence Wellness Suite',
+    image: '/images/gallery-indoor-mosaic-swimming-pool.jpg',
+  },
+  {
+    id: 'vastu-compliant-3bhk-cad-floor-plan',
+    title: "Vastu-Compliant 27' × 38' 3BHK Architectural CAD Floor Plan",
+    category: 'Floor Plans',
+    location: 'Architectural CAD Blueprint',
+    image: '/images/gallery-vastu-3bhk-cad-floor-plan.png',
+  },
+  {
+    id: 'vedic-vastu-digdarshan-orientation-grid',
+    title: 'Classical 16-Zone Vedic Vastu-Digdarshan Cosmic Grid',
+    category: '3D Design',
+    location: 'Vedic Architectural Planning Matrix',
+    image: '/images/gallery-vedic-vastu-digdarshan-grid.png',
+  },
+  {
+    id: 'dimensioned-22x50-villa-cad-layout',
+    title: "Precision 22' × 50' Residential Villa Dimensioned CAD Layout",
+    category: 'Floor Plans',
+    location: 'Architectural Working Drawing',
+    image: '/images/gallery-dimensioned-22x50-villa-cad-layout.png',
+  },
+  {
     id: 'modern-4storey-villa-elevation',
     title: 'Modern 4-Storey Luxury Villa Elevation',
     category: '3D Design',
