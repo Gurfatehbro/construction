@@ -149,10 +149,29 @@ export default function Footer() {
             href={buildWhatsAppLink("Hello Global Infraspace, I would like to discuss a project with you.")}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-base btn-outline mt-6 hover:border-gold hover:text-gold"
+            className="btn-base btn-outline mt-6 hover:border-gold hover:text-gold block text-center"
           >
             WhatsApp Us
           </a>
+
+          {/* Justdial Users' Choice 2026 Award Certificate */}
+          <div className="mt-7 pt-5 border-t border-border/80">
+            <div className="group overflow-hidden rounded-lg border border-gold/40 bg-[#121316] p-2.5 shadow-xl transition-all hover:border-gold max-w-[280px]">
+              <img
+                src="/images/justdial-award.png"
+                alt="Justdial Users' Choice 2026 - Global Infraspace"
+                className="w-full h-auto rounded object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+              />
+              <div className="pt-2.5 pb-0.5 text-center">
+                <p className="text-[0.68rem] uppercase tracking-[0.16em] text-gold font-semibold">
+                  Justdial Users' Choice 2026
+                </p>
+                <div className="flex justify-center text-gold text-xs tracking-widest mt-0.5">
+                  ★★★★★
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
