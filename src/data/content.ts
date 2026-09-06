@@ -1,5 +1,7 @@
 export const WHATSAPP_NUMBER = '917506492611';
 
+export const JUSTDIAL_URL = 'https://jsdl.in/DT-47XVP5VVBD4';
+
 export const CONTACT = {
   office: '3rd Floor, The Hub, Near Regent Cinema, Gandhi Maidan – 800001',
   phone: '750-649-2611',
@@ -7,6 +9,7 @@ export const CONTACT = {
   phoneHref: '+917506492611',
   email: 'info@globalinfraspace.com',
   workingHours: 'Mon – Sat: 10:00 AM – 7:00 PM',
+  justdial: JUSTDIAL_URL,
 };
 
 export const IMAGES = {

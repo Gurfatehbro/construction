@@ -109,18 +109,27 @@ export default function AboutPage() {
       <section className="border-b border-border bg-background py-20">
         <div className="container-wide grid gap-12 lg:grid-cols-2 items-center">
           <div className="flex justify-center">
-            <div className="relative group max-w-md w-full overflow-hidden border border-gold/40 bg-[#121316] p-3 shadow-2xl">
+            <a
+              href={CONTACT.justdial}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Global Infraspace on Justdial"
+              className="block relative group max-w-md w-full overflow-hidden border border-gold/40 bg-[#121316] p-3 shadow-2xl transition-all hover:border-gold hover:shadow-gold/10"
+            >
               <img
                 src="/images/justdial-award.png"
                 alt="Justdial Users' Choice 2026 - Global Infraspace"
                 className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-[1.02]"
               />
               <div className="pt-3 pb-1 text-center">
-                <span className="text-xs uppercase tracking-[0.2em] text-gold font-semibold">
-                  Official Justdial Users' Choice 2026 Award
+                <span className="text-xs uppercase tracking-[0.2em] text-gold font-semibold group-hover:underline flex items-center justify-center gap-1.5">
+                  Official Justdial Users' Choice 2026 Award ↗
                 </span>
+                <p className="text-[0.68rem] text-muted-foreground mt-1">
+                  Click to view verified reviews on Justdial
+                </p>
               </div>
-            </div>
+            </a>
           </div>
 
           <div>
@@ -133,14 +142,24 @@ export default function AboutPage() {
               Recognized for high standards of structural engineering, architectural precision, and transparent turnkey execution. We are proud to hold 5-star client satisfaction across our design, construction, and interior portfolio.
             </p>
 
-            <div className="mt-8 flex items-center gap-4 p-4 bg-surface border border-border">
-              <span className="text-gold text-2xl tracking-widest">★★★★★</span>
-              <span className="text-xs uppercase tracking-[0.16em] text-neutral-300 font-medium border-l border-border pl-4">
-                Verified 5-Star Customer Rating
-              </span>
+            <div className="mt-8 flex items-center justify-between p-4 bg-surface border border-border">
+              <div className="flex items-center gap-4">
+                <span className="text-gold text-2xl tracking-widest">★★★★★</span>
+                <span className="text-xs uppercase tracking-[0.16em] text-neutral-300 font-medium border-l border-border pl-4">
+                  Verified 5-Star Customer Rating
+                </span>
+              </div>
+              <a
+                href={CONTACT.justdial}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-gold hover:text-white uppercase tracking-wider font-semibold underline flex items-center gap-1"
+              >
+                Justdial ↗
+              </a>
             </div>
 
-            <div className="mt-8 flex gap-4">
+            <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href={buildWhatsAppLink("Hello Global Infraspace, I would like to book a consultation with your architectural team.")}
                 target="_blank"
@@ -148,6 +167,14 @@ export default function AboutPage() {
                 className="btn-base btn-gold"
               >
                 Book Consultation
+              </a>
+              <a
+                href={CONTACT.justdial}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-base btn-outline flex items-center gap-1.5"
+              >
+                View on Justdial ↗
               </a>
               <Link to="/projects" className="btn-base btn-outline">
                 View Portfolio

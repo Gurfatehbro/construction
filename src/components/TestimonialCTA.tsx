@@ -46,18 +46,27 @@ export default function TestimonialCTA() {
           </div>
 
           <div className="reveal flex justify-center">
-            <div className="relative group max-w-md w-full overflow-hidden border border-gold/30 bg-[#121316] p-3 shadow-2xl shadow-black/60 transition-all hover:border-gold">
+            <a
+              href={CONTACT.justdial}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Justdial Users' Choice 2026 verification for Global Infraspace"
+              className="block relative group max-w-md w-full overflow-hidden border border-gold/30 bg-[#121316] p-3 shadow-2xl shadow-black/60 transition-all hover:border-gold hover:shadow-gold/10"
+            >
               <img
                 src="/images/justdial-award.png"
                 alt="Global Infraspace - Justdial Users' Choice 2026 Award"
                 className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-[1.02]"
               />
               <div className="pt-3 pb-1 text-center">
-                <p className="text-[0.7rem] uppercase tracking-[0.18em] text-gold font-semibold">
-                  Official Justdial Users' Choice 2026 Certificate
+                <p className="text-[0.7rem] uppercase tracking-[0.18em] text-gold font-semibold group-hover:underline flex items-center justify-center gap-1.5">
+                  Official Justdial Users' Choice 2026 Certificate ↗
                 </p>
+                <span className="text-[0.65rem] text-muted-foreground group-hover:text-gold transition-colors">
+                  Click to view verified profile on Justdial
+                </span>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>

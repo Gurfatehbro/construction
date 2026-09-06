@@ -189,7 +189,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="mt-8 pt-8 border-t border-border flex flex-col sm:flex-row gap-4">
+              <div className="mt-8 pt-8 border-t border-border flex flex-col sm:flex-row gap-3">
                 <a
                   href={buildWhatsAppLink("Hello Global Infraspace, I would like to discuss a project with you.")}
                   target="_blank"
@@ -205,6 +205,14 @@ export default function ContactPage() {
                   className="btn-base btn-outline flex-1 text-center"
                 >
                   Directions
+                </a>
+                <a
+                  href={CONTACT.justdial}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-base bg-[#ff6b00]/15 border border-[#ff6b00]/40 text-[#ff8822] hover:bg-[#ff6b00]/25 hover:border-[#ff6b00] flex-1 text-center text-xs uppercase tracking-wider font-semibold"
+                >
+                  Justdial ↗
                 </a>
               </div>
             </div>

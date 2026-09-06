@@ -193,7 +193,7 @@ export default function BookConsultationPage() {
                 </p>
               </div>
 
-              <div className="mt-6 pt-6 border-t border-border">
+              <div className="mt-6 pt-6 border-t border-border space-y-3">
                 <a
                   href="https://maps.google.com/?q=Gandhi+Maidan+Patna+Bihar+800001"
                   target="_blank"
@@ -201,6 +201,14 @@ export default function BookConsultationPage() {
                   className="btn-base btn-outline w-full text-center block"
                 >
                   View on Google Maps
+                </a>
+                <a
+                  href={CONTACT.justdial}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-base bg-[#ff6b00]/15 border border-[#ff6b00]/40 text-[#ff8822] hover:bg-[#ff6b00]/25 hover:border-[#ff6b00] w-full text-center block text-xs uppercase tracking-wider font-semibold"
+                >
+                  Verified on Justdial ↗
                 </a>
               </div>
             </div>
