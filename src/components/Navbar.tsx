@@ -51,13 +51,13 @@ export default function Navbar() {
           </nav>
 
           {/* Phone & CTA */}
-          <div className="hidden items-center gap-6 lg:flex">
+          <div className="hidden items-center gap-5 lg:flex">
             <a
               href={`tel:${CONTACT.phoneHref}`}
-              className="flex items-center gap-2 text-[0.72rem] uppercase tracking-[0.16em] text-muted-foreground transition-colors hover:text-gold"
+              className="flex items-center gap-2 text-xs font-semibold tracking-wider text-white border border-gold/40 px-3.5 py-2 rounded-full bg-surface/90 hover:border-gold hover:text-gold transition-colors shadow-sm"
             >
               <Phone className="h-3.5 w-3.5 text-gold" />
-              {CONTACT.phone}
+              <span>750-649-2611</span>
             </a>
             <Link
               to="/book-consultation"
@@ -67,15 +67,24 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            type="button"
-            aria-label="Open menu"
-            onClick={() => setMenuOpen((v) => !v)}
-            className="p-2 text-foreground lg:hidden"
-          >
-            {menuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
+          {/* Mobile Right Controls: Visible Phone Pill & Menu Toggle */}
+          <div className="flex items-center gap-2.5 lg:hidden">
+            <a
+              href={`tel:${CONTACT.phoneHref}`}
+              className="flex items-center gap-1.5 text-[0.72rem] font-semibold tracking-wider text-gold border border-gold/40 px-2.5 py-1 rounded-full bg-surface/90 active:scale-95 transition-transform"
+            >
+              <Phone className="h-3 w-3 text-gold" />
+              <span>750-649-2611</span>
+            </a>
+            <button
+              type="button"
+              aria-label="Open menu"
+              onClick={() => setMenuOpen((v) => !v)}
+              className="p-1.5 text-foreground"
+            >
+              {menuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
         </div>
       </header>
 
