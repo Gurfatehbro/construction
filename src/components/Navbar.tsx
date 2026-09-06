@@ -9,6 +9,7 @@ const NAV_LINKS = [
   { name: 'Home', path: '/' },
   { name: 'About', path: '/about' },
   { name: 'Services', path: '/services' },
+  { name: 'Vastu', path: '/vastu' },
   { name: 'Packages', path: '/packages' },
   { name: 'Projects', path: '/projects' },
   { name: 'Gallery', path: '/gallery' },
@@ -34,7 +35,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden items-center gap-8 lg:flex">
+          <nav className="hidden items-center gap-4 xl:gap-6 lg:flex">
             {NAV_LINKS.map((link) => (
               <NavLink
                 key={link.name}

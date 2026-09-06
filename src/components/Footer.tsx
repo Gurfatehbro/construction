@@ -24,6 +24,11 @@ export default function Footer() {
           <h3 className="text-sm uppercase tracking-[0.2em] text-foreground">Services</h3>
           <ul className="mt-6 space-y-3">
             <li>
+              <Link to="/vastu" className="text-sm text-gold hover:underline font-medium flex items-center gap-1.5">
+                <span>✦</span> Vastu Shastra Planning
+              </Link>
+            </li>
+            <li>
               <Link to="/services/3d-architectural-design" className="text-sm text-muted-foreground transition-colors hover:text-gold">
                 3D Architectural Design
               </Link>

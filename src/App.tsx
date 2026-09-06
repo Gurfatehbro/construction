@@ -11,6 +11,7 @@ import HomePage from '@/pages/HomePage';
 import AboutPage from '@/pages/AboutPage';
 import ServicesPage from '@/pages/ServicesPage';
 import ServiceDetailPage from '@/pages/ServiceDetailPage';
+import VastuPage from '@/pages/VastuPage';
 import PackagesPage from '@/pages/PackagesPage';
 import ProjectsPage from '@/pages/ProjectsPage';
 import GalleryPage from '@/pages/GalleryPage';
@@ -34,6 +35,10 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/services" element={<ServicesPage />} />
+            <Route path="/vastu" element={<VastuPage />} />
+            <Route path="/services/vastu" element={<VastuPage />} />
+            <Route path="/services/vastu-shastra" element={<VastuPage />} />
+            <Route path="/services/vastu-shastra-architectural-plans" element={<VastuPage />} />
             <Route path="/services/:slug" element={<ServiceDetailPage />} />
             <Route path="/packages" element={<PackagesPage />} />
             <Route path="/projects" element={<ProjectsPage />} />

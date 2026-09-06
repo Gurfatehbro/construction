@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Search, Phone } from 'lucide-react';
+import { ArrowRight, Search, Phone, Compass } from 'lucide-react';
 import { ALL_SERVICES, CONTACT, buildWhatsAppLink } from '@/data/content';
 import VastuCalculator from '@/components/VastuCalculator';
 
@@ -39,6 +39,27 @@ export default function ServicesPage() {
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground">
             From 3D architectural elevations and turnkey building construction to luxury interiors, swimming pools, and independent engineering advice. 6 specialized services across every category.
           </p>
+        </div>
+      </section>
+
+      {/* Dedicated Vastu Page Banner */}
+      <section className="bg-gradient-to-r from-[#141518] via-[#1f1a12] to-[#141518] border-b border-gold/40 py-5">
+        <div className="container-wide flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-3.5">
+            <div className="p-2.5 rounded-full bg-gold/15 border border-gold/40 text-gold shrink-0">
+              <Compass className="h-5 w-5" />
+            </div>
+            <div>
+              <span className="text-[0.68rem] uppercase tracking-[0.18em] font-semibold text-gold">Dedicated Architectural Service</span>
+              <h2 className="font-serif text-lg sm:text-2xl text-white">Vastu Shastra Planning, 9-Zone Matrix &amp; Directional Audit</h2>
+            </div>
+          </div>
+          <Link
+            to="/vastu"
+            className="btn-base btn-gold text-xs tracking-wider shrink-0 flex items-center gap-2"
+          >
+            Open Dedicated Vastu Page <ArrowRight size={14} />
+          </Link>
         </div>
       </section>
 
@@ -111,10 +132,10 @@ export default function ServicesPage() {
 
                   <div className="mt-6 pt-6 border-t border-border flex items-center justify-between">
                     <Link
-                      to={`/services/${service.slug}`}
+                      to={service.id === 'vastu-shastra-planning' ? '/vastu' : `/services/${service.slug}`}
                       className="inline-flex items-center gap-1.5 text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-gold hover:text-white transition-colors"
                     >
-                      Service Details <ArrowRight size={13} />
+                      {service.id === 'vastu-shastra-planning' ? 'Open Dedicated Page' : 'Service Details'} <ArrowRight size={13} />
                     </Link>
                     <Link
                       to="/book-consultation"
