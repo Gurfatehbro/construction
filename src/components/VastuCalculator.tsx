@@ -74,6 +74,28 @@ export default function VastuCalculator() {
       facingName: facing,
       suggestions,
     });
+
+    const fullVastuReportMessage =
+      `🏛️ *Vastu Shastra Planning Report - Global Infraspace*\n\n` +
+      `📋 *Plot Specifications:*\n` +
+      `• Plot Dimensions: ${l} ft × ${w} ft\n` +
+      `• Total Area: ${area.toLocaleString('en-IN')} sq.ft\n` +
+      `• Road Facing Direction: *${facing}*\n\n` +
+      `🧭 *Vastu Purusha Mandala Room Allocations:*\n` +
+      `• Main Entrance: ${suggestions.entrance}\n` +
+      `• Master Bedroom: ${suggestions.masterBedroom}\n` +
+      `• Kitchen: ${suggestions.kitchen}\n` +
+      `• Pooja Room: ${suggestions.poojaRoom}\n` +
+      `• Living Room: ${suggestions.livingRoom}\n` +
+      `• Toilets / Bathrooms: ${suggestions.toilets}\n` +
+      `• Staircase: ${suggestions.staircase}\n` +
+      `• Underground Borewell: ${suggestions.waterBorewell}\n` +
+      `• Overhead Water Tank: ${suggestions.overheadTank}\n` +
+      `• Balcony / Verandah: ${suggestions.balcony}\n\n` +
+      `Please review my plot details and share a customized 2D/3D Vastu-compliant architectural floor plan.`;
+
+    const waUrl = buildWhatsAppLink(fullVastuReportMessage);
+    window.location.href = waUrl;
   };
 
   const handleReset = () => {
@@ -254,7 +276,7 @@ export default function VastuCalculator() {
                 </div>
 
                 <p className="text-[0.7rem] text-muted-foreground leading-relaxed text-center pt-2">
-                  Preliminary direction-based planning guidance. Final placement should be checked against the actual floor plan and site.
+                  Preliminary direction-based planning guidance. Clicking "Get Vastu Suggestion" opens your complete plot report directly on official WhatsApp.
                 </p>
               </form>
             </div>
