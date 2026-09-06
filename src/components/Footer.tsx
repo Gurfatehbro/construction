@@ -106,9 +106,14 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link to="/book-consultation" className="hover:text-gold">
+              <a
+                href={buildWhatsAppLink("Hello Global Infraspace, I would like to book a consultation for my project.")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gold"
+              >
                 Book a Consultation
-              </Link>
+              </a>
             </li>
             <li>
               <Link to="/contact" className="hover:text-gold">

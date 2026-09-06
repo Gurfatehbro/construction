@@ -19,7 +19,8 @@ export default function ContactPage() {
       location,
       notes,
     });
-    window.open(buildWhatsAppLink(msg), '_blank');
+    const waUrl = buildWhatsAppLink(msg);
+    window.location.href = waUrl;
     setSent(true);
     setTimeout(() => setSent(false), 4000);
   };
@@ -127,7 +128,7 @@ export default function ContactPage() {
               >
                 {sent ? (
                   <>
-                    <CheckCircle2 size={18} /> Booking Consultation...
+                    <CheckCircle2 size={18} /> Redirecting to WhatsApp...
                   </>
                 ) : (
                   <>
@@ -135,6 +136,21 @@ export default function ContactPage() {
                   </>
                 )}
               </button>
+
+              <div className="relative flex py-2 items-center">
+                <div className="flex-grow border-t border-border"></div>
+                <span className="flex-shrink mx-4 text-[0.65rem] uppercase tracking-wider text-muted-foreground">Or Connect Instantly</span>
+                <div className="flex-grow border-t border-border"></div>
+              </div>
+
+              <a
+                href={buildWhatsAppLink("Hello Global Infraspace, I would like to book a consultation for my project.")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full btn-base bg-[#25D366] text-black hover:bg-[#20bd5a] font-semibold flex items-center justify-center gap-2 py-3.5 tracking-wider uppercase text-xs"
+              >
+                Direct WhatsApp Chat (1-Click)
+              </a>
             </form>
           </div>
 

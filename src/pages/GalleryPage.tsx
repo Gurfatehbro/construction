@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { GALLERY_ITEMS } from '@/data/content';
+import { GALLERY_ITEMS, buildWhatsAppLink } from '@/data/content';
 import { MapPin } from 'lucide-react';
 
 export default function GalleryPage() {
@@ -78,9 +78,14 @@ export default function GalleryPage() {
           </div>
 
           <div className="mt-16 text-center">
-            <Link to="/book-consultation" className="btn-base btn-gold">
-              Book a Consultation
-            </Link>
+            <a
+              href={buildWhatsAppLink("Hello Global Infraspace, I would like to book a consultation for my project.")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-base btn-gold"
+            >
+              Book Consultation
+            </a>
           </div>
         </div>
       </section>

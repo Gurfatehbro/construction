@@ -71,12 +71,14 @@ export default function ServiceDetailPage() {
               </p>
 
               <div className="mt-8 space-y-4">
-                <Link
-                  to="/book-consultation"
+                <a
+                  href={buildWhatsAppLink(`Hello Global Infraspace, I would like to book a consultation for ${service.title}.`)}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full btn-base btn-gold text-center block"
                 >
                   Book Consultation
-                </Link>
+                </a>
                 <a
                   href={buildWhatsAppLink(`Hello Global Infraspace, I would like to consult on ${service.title}.`)}
                   target="_blank"

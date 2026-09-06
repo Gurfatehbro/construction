@@ -1,7 +1,7 @@
 export const WHATSAPP_NUMBER = '917506492611';
 
 export const CONTACT = {
-  office: '3rd Floor, The Hub, Near Regent Cinema, Gandhi Maidan, Dujra Diara – 800001',
+  office: '3rd Floor, The Hub, Near Regent Cinema, Gandhi Maidan – 800001',
   phone: '750-649-2611',
   phoneDisplay: '750-649-2611',
   phoneHref: '+917506492611',

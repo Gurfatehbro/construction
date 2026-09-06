@@ -26,9 +26,14 @@ export default function TestimonialCTA() {
             </div>
 
             <div className="mt-8 flex flex-wrap gap-4">
-              <Link to="/book-consultation" className="btn-base btn-gold">
-                Book a Consultation
-              </Link>
+              <a
+                href={buildWhatsAppLink("Hello Global Infraspace, I noticed your Justdial Users' Choice recognition and would like to book a consultation for my project.")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-base btn-gold"
+              >
+                Book Consultation
+              </a>
               <a
                 href={buildWhatsAppLink("Hello Global Infraspace, I noticed your Justdial Users' Choice recognition and would like to discuss my project.")}
                 target="_blank"
@@ -70,12 +75,14 @@ export default function TestimonialCTA() {
             </p>
 
             <div className="mt-9 flex flex-wrap gap-4">
-              <Link
-                to="/book-consultation"
+              <a
+                href={buildWhatsAppLink("Hello Global Infraspace, I would like to book a consultation for my project.")}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-base btn-gold hover:btn-gold-hover"
               >
-                Book a Consultation
-              </Link>
+                Book Consultation
+              </a>
               <a
                 href={buildWhatsAppLink("Hello Global Infraspace, I would like to discuss a project with you.")}
                 target="_blank"

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { IMAGES } from '@/data/content';
+import { IMAGES, buildWhatsAppLink } from '@/data/content';
 
 export default function Hero() {
   return (
@@ -29,14 +29,14 @@ export default function Hero() {
         />
       </div>
 
-      <div className="container-wide relative pb-24 pt-40 z-10">
-        <div className="reveal is-visible">
-          <p className="eyebrow">Architecture · Construction · Interiors</p>
+      <div className="container-wide relative z-10 pb-20 pt-32 sm:pb-28">
+        <div className="max-w-3xl">
+          <p className="eyebrow">
+            Architecture • Engineering • Construction • Interiors
+          </p>
 
-          <h1 className="mt-6 max-w-4xl text-[2.6rem] font-serif leading-[1.05] sm:text-6xl lg:text-7xl uppercase tracking-tight text-white">
-            DESIGNING SPACES.
-            <br />
-            <span className="text-gold">BUILDING FUTURES.</span>
+          <h1 className="mt-6 font-serif text-4xl leading-[1.08] tracking-tight sm:text-6xl lg:text-7xl">
+            Where vision takes structure
           </h1>
 
           <p className="mt-8 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
@@ -44,12 +44,14 @@ export default function Hero() {
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
-            <Link
-              to="/book-consultation"
+            <a
+              href={buildWhatsAppLink("Hello Global Infraspace, I would like to book a consultation for my project.")}
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-base btn-gold"
             >
-              Book a Consultation
-            </Link>
+              Book Consultation
+            </a>
             <Link
               to="/services"
               className="btn-base btn-outline"

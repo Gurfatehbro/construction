@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Building, ShieldCheck, MapPin, ArrowRight, CheckCircle2 } from 'lucide-react';
-import { CONTACT, IMAGES } from '@/data/content';
+import { CONTACT, IMAGES, buildWhatsAppLink } from '@/data/content';
 
 export default function AboutPage() {
   return (
@@ -39,9 +39,14 @@ export default function AboutPage() {
             </div>
 
             <div className="mt-8 flex gap-4">
-              <Link to="/book-consultation" className="btn-base btn-gold">
-                Book a Consultation
-              </Link>
+              <a
+                href={buildWhatsAppLink("Hello Global Infraspace, I would like to book a consultation with your architectural team.")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-base btn-gold"
+              >
+                Book Consultation
+              </a>
               <Link to="/services" className="btn-base btn-outline">
                 Explore Services
               </Link>
@@ -136,9 +141,14 @@ export default function AboutPage() {
             </div>
 
             <div className="mt-8 flex gap-4">
-              <Link to="/book-consultation" className="btn-base btn-gold">
+              <a
+                href={buildWhatsAppLink("Hello Global Infraspace, I would like to book a consultation with your architectural team.")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-base btn-gold"
+              >
                 Book Consultation
-              </Link>
+              </a>
               <Link to="/projects" className="btn-base btn-outline">
                 View Portfolio
               </Link>

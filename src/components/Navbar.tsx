@@ -3,7 +3,7 @@ import { NavLink, Link } from 'react-router-dom';
 import { Menu, X, Phone } from 'lucide-react';
 import Logo from './Logo';
 import { useScrolled } from '@/hooks/useScrollAnimation';
-import { CONTACT } from '@/data/content';
+import { CONTACT, buildWhatsAppLink } from '@/data/content';
 
 const NAV_LINKS = [
   { name: 'Home', path: '/' },
@@ -60,12 +60,14 @@ export default function Navbar() {
               <Phone className="h-3.5 w-3.5 text-gold" />
               <span>750-649-2611</span>
             </a>
-            <Link
-              to="/book-consultation"
+            <a
+              href={buildWhatsAppLink("Hello Global Infraspace, I would like to book a consultation for my project.")}
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-base btn-gold"
             >
               Book Consultation
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Right Controls: Visible Phone Pill & Menu Toggle */}
@@ -138,13 +140,15 @@ export default function Navbar() {
               <Phone className="h-4 w-4 text-gold" />
               Call {CONTACT.phone}
             </a>
-            <Link
-              to="/book-consultation"
+            <a
+              href={buildWhatsAppLink("Hello Global Infraspace, I would like to book a consultation for my project.")}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
               className="w-full btn-base btn-gold text-center block"
             >
               Book Consultation
-            </Link>
+            </a>
           </div>
         </div>
       </div>

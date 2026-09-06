@@ -215,9 +215,14 @@ export default function VastuPage() {
               <a href="#calculator" className="btn-base btn-gold flex items-center gap-2">
                 <Sparkles size={16} /> Calculate Your Plot Vastu
               </a>
-              <Link to="/book-consultation" className="btn-base btn-outline">
+              <a
+                href={buildWhatsAppLink("Hello Global Infraspace, I would like to book a Vastu Shastra consultation for my plot / building.")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-base btn-outline"
+              >
                 Book Vastu Consultation
-              </Link>
+              </a>
               <a
                 href={buildWhatsAppLink(
                   `Hello Global Infraspace, I would like to consult with your Vastu Shastra architectural team regarding my plot floor plan.`
@@ -439,12 +444,14 @@ export default function VastuPage() {
                   </div>
 
                   <div className="mt-8 pt-6 border-t border-border flex items-center justify-between">
-                    <Link
-                      to="/book-consultation"
+                    <a
+                      href={buildWhatsAppLink(`Hello Global Infraspace, I would like to book the Vastu service: ${srv.title}.`)}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-xs uppercase tracking-[0.16em] font-semibold text-gold hover:text-white inline-flex items-center gap-1.5 transition-colors"
                     >
                       Book This Service <ArrowRight size={14} />
-                    </Link>
+                    </a>
                     <a
                       href={`tel:${CONTACT.phoneHref}`}
                       className="text-xs text-muted-foreground hover:text-gold flex items-center gap-1"
@@ -541,9 +548,14 @@ export default function VastuPage() {
           </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-            <Link to="/book-consultation" className="btn-base btn-gold">
+            <a
+              href={buildWhatsAppLink("Hello Global Infraspace, I want to book a Vastu consultation for my house construction.")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-base btn-gold"
+            >
               Book Consultation
-            </Link>
+            </a>
             <a
               href={`tel:${CONTACT.phoneHref}`}
               className="btn-base btn-outline flex items-center gap-2"

@@ -137,12 +137,14 @@ export default function ServicesPage() {
                     >
                       {service.id === 'vastu-shastra-planning' ? 'Open Dedicated Page' : 'Service Details'} <ArrowRight size={13} />
                     </Link>
-                    <Link
-                      to="/book-consultation"
+                    <a
+                      href={buildWhatsAppLink(`Hello Global Infraspace, I would like to book a consultation for ${service.title}.`)}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-[0.7rem] text-muted-foreground hover:text-gold uppercase tracking-[0.14em]"
                     >
                       Book Now
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -168,9 +170,14 @@ export default function ServicesPage() {
             <p className="mt-2 text-sm text-muted-foreground">Speak directly with our principal civil engineering team.</p>
           </div>
           <div className="flex gap-4">
-            <Link to="/book-consultation" className="btn-base btn-gold">
+            <a
+              href={buildWhatsAppLink("Hello Global Infraspace, I would like to book an architectural / construction consultation.")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-base btn-gold"
+            >
               Book Consultation
-            </Link>
+            </a>
             <a href={`tel:${CONTACT.phoneHref}`} className="btn-base btn-outline">
               <Phone size={14} className="mr-2" /> {CONTACT.phone}
             </a>

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { BLOG_ARTICLES } from '@/data/content';
+import { BLOG_ARTICLES, buildWhatsAppLink } from '@/data/content';
 import { ArrowRight, ArrowLeft } from 'lucide-react';
 
 export default function BlogPage() {
@@ -52,9 +52,14 @@ export default function BlogPage() {
                   <h3 className="font-serif text-2xl text-white">Planning your next project?</h3>
                   <p className="text-sm text-muted-foreground mt-1">Get an exact line-item material quotation and 3D architectural plan.</p>
                 </div>
-                <Link to="/book-consultation" className="btn-base btn-gold whitespace-nowrap">
+                <a
+                  href={buildWhatsAppLink("Hello Global Infraspace, I would like to book a consultation for my project.")}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-base btn-gold whitespace-nowrap"
+                >
                   Book Consultation
-                </Link>
+                </a>
               </div>
             </div>
           ) : (
